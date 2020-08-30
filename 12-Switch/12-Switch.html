@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Switch</title>
+        <script>
+            var marks = Number(prompt("Enter Marks: "));
+            var message = "";
+            //Put true if using Condition in Case, else pass Parameter.
+            switch (true) {
+                case marks<35:
+                    message = "FAIL!";
+                    break;
+                case marks>=35 && marks<=60:
+                    message = "PASSED, 2nd DIVISION!";
+                    break;
+                case marks>61:
+                    message = "CONGRATULATIONS, YOU PASSED!";
+                    break;
+                default:
+                    message = "Something went wrong!";
+                    break;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Switch</h1>
+        <script type="text/javascript">
+            document.write(message);
+        </script>
+    </body>
+</html>
